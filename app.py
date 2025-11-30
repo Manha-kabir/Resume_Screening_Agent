@@ -8,7 +8,7 @@
 # ============================================
 import streamlit as st
 import os
-import PyPDF2
+from PyPDF2 import PdfReader
 import pandas as pd
 from dotenv import load_dotenv
 from groq import Groq  # Direct Groq SDK, no LangChain!
@@ -342,4 +342,5 @@ def main():
 # RUN APP
 # ============================================
 if __name__ == "__main__":
+
     main()
